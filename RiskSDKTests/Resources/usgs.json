@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated": 1755819954000,
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&latitude=31.850000&longitude=-101.770000&maxradiuskm=200.000",
+    "title": "USGS Earthquakes",
+    "status": 200,
+    "api": "1.14.1",
+    "count": 504
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.6,
+        "place": "12 km W of Stanton, Texas",
+        "time": 1755815991739,
+        "updated": 1755816292399,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/tx2025abcxyz",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=tx2025abcxyz&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 36,
+        "net": "tx",
+        "code": "2025abcxyz",
+        "ids": ",tx2025abcxyz,",
+        "sources": ",tx,",
+        "types": ",origin,phase-data,",
+        "nst": 50,
+        "dmin": 0.11,
+        "rms": 0.6,
+        "gap": 37,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.6 - 12 km W of Stanton, Texas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-101.920, 32.100, 4.9]
+      },
+      "id": "tx2025abcxyz"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.4,
+        "place": "14 km WSW of Stanton, Texas",
+        "time": 1755815804166,
+        "updated": 1755818278533,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/tx2025defuvw",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=tx2025defuvw&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 27,
+        "net": "tx",
+        "code": "2025defuvw",
+        "ids": ",tx2025defuvw,",
+        "sources": ",tx,",
+        "types": ",origin,phase-data,",
+        "nst": 42,
+        "dmin": 0.12,
+        "rms": 0.5,
+        "gap": 40,
+        "magType": "mlv",
+        "type": "earthquake",
+        "title": "M 1.4 - 14 km WSW of Stanton, Texas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-101.925, 32.095, 4.2]
+      },
+      "id": "tx2025defuvw"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.1,
+        "place": "21 km NE of Monahans, Texas",
+        "time": 1755807323689,
+        "updated": 1755818193001,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/tx2025ghijk",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=tx2025ghijk&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 63,
+        "net": "tx",
+        "code": "2025ghijk",
+        "ids": ",tx2025ghijk,",
+        "sources": ",tx,",
+        "types": ",origin,phase-data,",
+        "nst": 9,
+        "dmin": 0.51,
+        "rms": 0.4,
+        "gap": 112,
+        "magType": "mlv",
+        "type": "earthquake",
+        "title": "M 2.1 - 21 km NE of Monahans, Texas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-102.720, 31.700, 8.2]
+      },
+      "id": "tx2025ghijk"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 1.1,
+        "place": "23 km WSW of Coyanosa, Texas",
+        "time": 1753229475199,
+        "updated": 1753232411455,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/tx2025lmnoop",
+        "detail": "https://earthquake.usgs.gov/fdsnws/event/1/query?eventid=tx2025lmnoop&format=geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 20,
+        "net": "tx",
+        "code": "2025lmnoop",
+        "ids": ",tx2025lmnoop,",
+        "sources": ",tx,",
+        "types": ",origin,phase-data,",
+        "nst": 16,
+        "dmin": 0.01,
+        "rms": 0.9,
+        "gap": 85,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "M 1.1 - 23 km WSW of Coyanosa, Texas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-103.260, 31.140, 5.7]
+      },
+      "id": "tx2025lmnoop"
+    }
+  ],
+  "bbox": [-103.880, 30.920, 0.02, -100.560, 32.960, 13.8]
+}
