@@ -9,18 +9,26 @@ import CoreLocation
 import RiskSDK
 import SwiftUI
 
+private struct RiskSDKConfigEnvironmentKey: EnvironmentKey {
+    static let defaultValue: RiskSDKConfig = RiskSDKConfig()
+}
+
+extension EnvironmentValues {
+    var riskSDK: RiskSDKConfig {
+        get { self[RiskSDKConfigEnvironmentKey.self] }
+        set { self[RiskSDKConfigEnvironmentKey.self] = newValue }
+    }
+}
+
 struct ContentView: View {
-    let config = RiskSDKConfig()
+    @Environment(\.riskSDK) var riskSDK
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Button("Hello") {
+            Button("USGS Earthquake") {
                 Task {
                     do {
-                        let result = try await config.networkTransport.execute(
+                        let result = try await riskSDK.networkTransport.execute(
                             for: USGSEarthquakeRequest(
                                 location: .circleKilometers(
                                     coordinate: CLLocationCoordinate2D(latitude: 31.84831, longitude: -101.77179),
@@ -30,7 +38,7 @@ struct ContentView: View {
                         )
                         dump(result)
                     } catch {
-                        print("Error")
+                        print("Error: \(error)")
                     }
                 }
             }
@@ -42,5 +50,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
